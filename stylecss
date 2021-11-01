@@ -1,0 +1,45 @@
+.block-one-content{
+    background-image: url(images/bgc.png);
+    height: 800px;
+    width: 1845px;
+    left: 0px;
+    top: 0px;
+    border: 1px solid black;
+    background-size: cover;
+}
+.navigator{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: aliceblue;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 135%;
+    margin-right: 100px;
+    position: absolute;
+    width: 140px;
+    height: 22px;
+    left: 667px;
+    top: 35px;
+}
+.navigator ul li{
+    margin-right: 47px;
+}
+.navigator ul{
+    display: flex;
+    list-style: none;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.description{
+    position: absolute;
+    width: 150px;
+    height: 24px;
+    left: 180px;
+    top: 33px;
+    background: url(.png);
+}
