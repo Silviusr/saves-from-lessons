@@ -1,3 +1,17 @@
+import random as rn
+class Fighter():
+    def __init__(self, name, health=100, dmg_per_attack=rn.randint(1,30)):
+        self.name = name
+        self.health = health
+        self.dmg = dmg_per_attack
+    def __str__(self):
+        return "Fighter({},{},{})".format(self.name, self.health, self.dmg)
+
+player1 = Fighter("Rasul")
+player2 = Fighter("Aibika")
+print(player1.__str__())
+print(player2.__str__())
+
 player1 = {
     "name": 'Zero',
     "health": 100,
