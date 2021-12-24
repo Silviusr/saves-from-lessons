@@ -97,3 +97,56 @@
 # def scramblies(str1, str2):
 #     return all([s in str1 for s in str2])
 # print(scramblies(str1, str2))
+
+
+
+
+
+
+# binary.py
+# '''
+# linear    |  binary
+# 100 = 100 |  100 == 4
+# 4 bil = 4 |  32
+# '''
+# l = [1, 2, 3, 4, 5, 6, 7]
+# left = 0
+# right = 6
+# mid = 3
+# x = 5
+# l[mid] == x
+# l[mid] > x
+# l[mid] < x
+# def binary_search(arr, item):
+#     left = 0
+#     right = len(arr) - 1
+#     while left <= right:
+#         mid = (left + right) // 2
+#         guess = arr[mid]
+#         if guess == item:
+#             return mid
+#         if guess > item:
+#             right = mid - 1
+#         else:
+#             left = mid +1
+#     return None
+# x = int(input('Enter a number: '))
+# if (binary_search([1,2,3,4,5,6,7], x)):
+#     print ('Number found')
+# else:
+#     print('Not found')
+
+
+
+
+
+# def buble_sort(arr):
+#     n=len(arr)
+#     for i in range (n-1):
+#         for j in range (n-1-i):
+#             if arr[j]>arr[j+1]:
+#                 arr[j], arr[j+1] = arr[j+1], arr[j]
+#     return arr
+# l=[0, 8, 56, 62, 7, 2, 34, 8]
+# print(l)
+# print(buble_sort(l))
