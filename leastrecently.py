@@ -14,7 +14,6 @@ class LRUCache:
         self.tail = ListNode()
         self.head.next = self.tail
         self.tail.prev = self.head
-        self.history =[]
 
     def get(self, key):
         if key in self.cache:
@@ -26,11 +25,11 @@ class LRUCache:
             return -1
 
     def put(self, key, value):
-        print(list(self.cache))
         if key in self.cache:
             self._remove(self.cache[key])
+        if value > self.capacity:
+            return -1
         node = ListNode(key, value)
-        self.history.append(value)
         self.cache[key] = node
         self._add(node)
         if self.size > self.capacity:
@@ -60,7 +59,6 @@ class LRUCache:
             sequence.append(current.key)
             current = current.next
         print(sequence)
-        print(self.history)
 
 
 # Example usage:
